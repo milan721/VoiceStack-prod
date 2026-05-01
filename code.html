@@ -6,9 +6,7 @@
 <title>Configuration — Settings</title>
 <!-- Inline favicon to prevent browser /favicon.ico 404 requests -->
 <link rel="icon" href="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'><rect width='64' height='64' fill='%23185FA5'/><text x='50%' y='50%' font-size='36' fill='%23ffffff' text-anchor='middle' alignment-baseline='central' font-family='DM Sans, sans-serif'>V</text></svg>" />
-<link rel="preconnect" href="https://fonts.googleapis.com" />
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet" />
+<!-- Removed external Google Fonts to avoid external 404 requests; using system font stack as fallback -->
 <style>
   *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
  
@@ -27,8 +25,8 @@
     --radius-sm: 8px;
     --radius-md: 12px;
     --radius-lg: 16px;
-    --font: 'DM Sans', sans-serif;
-    --font-mono: 'DM Mono', monospace;
+    --font: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+    --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, 'Roboto Mono', 'Courier New', monospace;
     --shadow-card: 0 1px 3px rgba(0,0,0,0.06), 0 4px 12px rgba(0,0,0,0.04);
     --shadow-detail: 0 2px 8px rgba(0,0,0,0.08), 0 8px 24px rgba(0,0,0,0.05);
     --transition: all 0.18s cubic-bezier(0.4, 0, 0.2, 1);
